@@ -59,7 +59,7 @@
                 includesText: 'Includes:',
                 features: ['No credit card required', 'Limited Agent requests', 'Limited Tab completions'],
                 buttonText: 'Download',
-                buttonVariant: 'secondary',
+                buttonVariant: 'outline',
             };
             const proPlan = {
                 title: 'Pro',
@@ -72,9 +72,34 @@
                     'Maximum context windows',
                 ],
                 buttonText: 'Get Pro',
+                buttonVariant: 'secondary',
+            };
+            const organizationPlan = {
+                title: 'Organization',
+                price: '$100/mo.',
+                includesText: 'Everything in Pro, plus:',
+                features: [
+                    'Unlimited Agent requests',
+                    'Unlimited users',
+                    'Unlimited workspaces',
+                    'Unlimited projects',
+                ],
+                buttonText: 'Get Organization',
                 buttonVariant: 'primary',
             };
-
+            const enterprisePlan = {
+                title: 'Enterprise',
+                price: '$1000/mo.',
+                includesText: 'Everything in Organization, plus:',
+                features: [
+                    'Unlimited Agent requests',
+                    'Unlimited users',
+                    'Unlimited workspaces',
+                    'Unlimited projects',
+                ],
+                buttonText: 'Get Enterprise',
+                buttonVariant: 'destructive',
+            };
             return (
                 // <> is a React Fragment - it groups elements without adding extra HTML divs
                 <>
@@ -83,7 +108,9 @@
                         {/* The spread operator {...hobbyPlan} passes all object properties as individual props */}
                         {/* This is the same as writing: title="Hobby" price="Free" includesText="Includes:" etc. */}
                         <PricingCard {...hobbyPlan} />
-                        <PricingCard {...proPlan} />
+                        <PricingCard {...proPlan} />    
+                        <PricingCard {...organizationPlan} />
+                        <PricingCard {...enterprisePlan} />
                     </div>
                 </>
             );

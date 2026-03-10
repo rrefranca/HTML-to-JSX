@@ -130,6 +130,32 @@ body {
     background-color: #333;
 }
 
+.download-button.outline {
+    background-color: transparent;
+    border: 1px solid #111;
+    color: #111;
+}
+
+.download-button.outline:hover {
+    background-color: #111;
+    color: #fff;
+}
+
+.download-button.outline:active {
+    background-color: #111;
+    color: #fff;
+}
+
+.download-button.destructive {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.download-button.destructive:hover {
+    background-color: #f6685e;
+}
+
+
 .page-label {
     position: fixed;
     top: 16px;
