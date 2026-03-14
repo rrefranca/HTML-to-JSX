@@ -1,9 +1,15 @@
+/* ============================================
+   Reset — removes browser defaults
+   ============================================ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ============================================
+   Page layout — centered, full-height
+   ============================================ */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #f7f7f4;
@@ -14,6 +20,9 @@ body {
     padding: 20px;
 }
 
+/* ============================================
+   Cards container — horizontal row of cards
+   ============================================ */
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -23,6 +32,9 @@ body {
     align-items: flex-start;
 }
 
+/* ============================================
+   Single card — fixed width, pill-shaped button at bottom
+   ============================================ */
 .card {
     display: flex;
     flex-direction: column;
@@ -34,11 +46,13 @@ body {
     flex-shrink: 0;
 }
 
+/* Card inner wrapper (title + price + content) */
 .card-top {
     display: flex;
     flex-direction: column;
 }
 
+/* Plan name (e.g. Hobby, Pro) */
 .card-title {
     font-size: 22px;
     line-height: 28px;
@@ -47,6 +61,7 @@ body {
     margin-bottom: 8px;
 }
 
+/* Price row — amount and period on same baseline */
 .card-price {
     font-size: 20px;
     color: rgba(38, 37, 30, 0.5);
@@ -65,16 +80,19 @@ body {
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Wrapper for "Includes:" text + feature list */
 .card-content {
     margin-bottom: 32px;
 }
 
+/* "Includes:" or "Everything in X, plus:" */
 .includes-text {
     font-size: 16px;
     color: rgba(38, 37, 30, 0.5);
     margin: 16px 0px;
 }
 
+/* Feature list — no bullets, vertical stack */
 .features-list {
     list-style: none;
     padding: 0;
@@ -88,6 +106,7 @@ body {
     color: #26251e;
 }
 
+/* Checkmark (✓) before each feature */
 .checkmark {
     color: #26251e;
     font-size: 14px;
@@ -95,6 +114,11 @@ body {
     font-weight: 400;
 }
 
+/* ============================================
+   Buttons — base + variants
+   ============================================ */
+
+/* Base: neutral gray, pill shape; margin-top: auto keeps it at card bottom */
 .download-button {
     margin-top: auto;
     width: fit-content;
@@ -117,6 +141,7 @@ body {
     background-color: #D8D6CE;
 }
 
+/* Primary: dark fill, for main CTA (e.g. Get Pro) */
 .download-button.primary {
     background-color: #111;
     color: #fff;
@@ -130,6 +155,7 @@ body {
     background-color: #333;
 }
 
+/* Outline: transparent with dark border */
 .download-button.outline {
     background-color: transparent;
     border: 1px solid #111;
@@ -146,6 +172,7 @@ body {
     color: #fff;
 }
 
+/* Destructive: red, for delete/danger actions */
 .download-button.destructive {
     background-color: #f44336;
     color: #fff;
@@ -155,7 +182,9 @@ body {
     background-color: #f6685e;
 }
 
-
+/* ============================================
+   Page label — fixed badge at top center
+   ============================================ */
 .page-label {
     position: fixed;
     top: 16px;
