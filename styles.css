@@ -132,18 +132,18 @@ body {
 
 .download-button.outline {
     background-color: transparent;
-    border: 1px solid #111;
+    border: 1px solid #D8D6CE;
     color: #111;
 }
 
 .download-button.outline:hover {
-    background-color: #111;
-    color: #fff;
+    background-color: #e4e3dd;
+    color: #111;
 }
 
 .download-button.outline:active {
-    background-color: #111;
-    color: #fff;
+    background-color: #e4e3dd;
+    color: #111;
 }
 
 .download-button.destructive {

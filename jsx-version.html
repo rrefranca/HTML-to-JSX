@@ -87,19 +87,6 @@
                 buttonText: 'Get Organization',
                 buttonVariant: 'primary',
             };
-            const enterprisePlan = {
-                title: 'Enterprise',
-                price: '$1000/mo.',
-                includesText: 'Everything in Organization, plus:',
-                features: [
-                    'Unlimited Agent requests',
-                    'Unlimited users',
-                    'Unlimited workspaces',
-                    'Unlimited projects',
-                ],
-                buttonText: 'Get Enterprise',
-                buttonVariant: 'destructive',
-            };
             return (
                 // <> is a React Fragment - it groups elements without adding extra HTML divs
                 <>
@@ -110,7 +97,6 @@
                         <PricingCard {...hobbyPlan} />
                         <PricingCard {...proPlan} />    
                         <PricingCard {...organizationPlan} />
-                        <PricingCard {...enterprisePlan} />
                     </div>
                 </>
             );
