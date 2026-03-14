@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding and responsive viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans — HTML version</title>
+    <!-- Preconnect speeds up font loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Inter font: weights 400, 500, 600, 700 -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Fixed label at top to identify this version -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Wrapper for all pricing cards; flexbox lays them in a row -->
     <div class="cards-container">
+
+        <!-- Card 1: Hobby plan -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Hobby</h3>
@@ -38,6 +46,8 @@
             </div>
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- Card 2: Pro plan -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Pro</h3>
@@ -69,7 +79,9 @@
             </div>
             <button class="download-button primary">Get Pro</button>
         </div>
-        <div class="card"> 
+
+        <!-- Card 3: Organization plan -->
+        <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Organization</h3>
                 <p class="card-price">
